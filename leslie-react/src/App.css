@@ -17,6 +17,21 @@
   }
 }
 
+.contador-container {
+  text-align: center;
+}
+
+.contador-buttons button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #667eea;
+  color: white;
+}
+
 .hero {
   position: relative;
 
