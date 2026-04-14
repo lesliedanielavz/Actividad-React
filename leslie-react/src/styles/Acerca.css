@@ -1,0 +1,131 @@
+/* Acerca.css */
+.about {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+  position: relative;
+}
+
+.about h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #3498db, #2c3e50);
+  border-radius: 2px;
+}
+
+.about .profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.about .profile img:hover {
+  transform: scale(1.05);
+}
+
+.about .info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about .info p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.about h3 {
+  color: #2c3e50;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.about h3.skills-title::before {
+  content: '💡';
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+.about h3.objectives-title::before {
+  content: '🎯';
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.about li {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #2c3e50;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.about li img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.about li:hover img {
+  filter: grayscale(0%);
+}
+
+.about li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
