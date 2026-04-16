@@ -4,6 +4,7 @@ import viteLogo from './../assets/vite.svg'
 import heroImg from './../assets/hero.png'
 import './../App.css'
 import { Contador } from '../Contador'
+import PerfilResumen from "../components/PerfilResumen";
 
 // MUI
 import Table from '@mui/material/Table';
@@ -32,6 +33,8 @@ function Tablas() {
   return (
     <section id="center">
       <h1>Tablas</h1>
+
+      <PerfilResumen />
 
       <button onClick={() => setCount(count + 1)}>
         Count: {count}

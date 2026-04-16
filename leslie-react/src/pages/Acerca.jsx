@@ -1,26 +1,39 @@
 import lesPhoto from "./../assets/les.jpeg";
 import "./../styles/Acerca.css";
+import { useAlumnoContext } from "../context/AlumnoContext";
 
 function Acerca() {
+  const { alumno } = useAlumnoContext();
+
   return (
     <div className="about">
       <h1>Acerca de mí</h1>
+
       <div className="profile">
         <img
           src={lesPhoto}
           alt="Leslie Daniela Valenzuela Zatarain"
         />
+
         <div className="info">
-          <p><strong>Nombre:</strong> Leslie Daniela Valenzuela Zatarain</p>
+          <p><strong>Nombre:</strong> {alumno.nombre}</p>
           <p><strong>Edad:</strong> 22 años</p>
           <p><strong>Ubicación:</strong> Mazatlán, Sinaloa</p>
-          <p><strong>Carrera:</strong> Ingeniería en Sistemas de Computación</p>
-          <p> Me apasiona el desarrollo web, especialmente el diseño de interfaces y experiencias digitales. Disfruto combinar creatividad y tecnología para crear aplicaciones modernas, intuitivas y visualmente atractivas. Mi principal fortaleza es el diseño, donde busco siempre lograr un equilibrio entre estética y funcionalidad.
+          <p><strong>Carrera:</strong> {alumno.carrera}</p>
+          <p><strong>Grupo:</strong> {alumno.grupo}</p>
+          <p><strong>Semestre:</strong> {alumno.semestre}</p>
+
+          <p>
+            Me apasiona el desarrollo web, especialmente el diseño de interfaces
+            y experiencias digitales. Disfruto combinar creatividad y tecnología
+            para crear aplicaciones modernas, intuitivas y visualmente atractivas.
+            Mi principal fortaleza es el diseño, donde busco siempre lograr un
+            equilibrio entre estética y funcionalidad.
           </p>
         </div>
       </div>
 
-      <h3 className="skills-title">  Habilidades</h3>
+      <h3 className="skills-title">Habilidades</h3>
       <ul>
         <li>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
@@ -70,9 +83,13 @@ function Acerca() {
 
       <h3 className="objectives-title">Objetivos</h3>
       <p>
-        Mi objetivo es convertirme en desarrolladora con enfoque en diseño, creando experiencias digitales atractivas, funcionales y centradas en el usuario. Busco seguir aprendiendo, innovar en cada proyecto y crecer profesionalmente dentro del mundo del desarrollo web.
+        Mi objetivo es convertirme en desarrolladora con enfoque en diseño,
+        creando experiencias digitales atractivas, funcionales y centradas en
+        el usuario. Busco seguir aprendiendo, innovar en cada proyecto y crecer
+        profesionalmente dentro del mundo del desarrollo web.
       </p>
     </div>
   );
 }
+
 export default Acerca;
