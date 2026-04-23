@@ -9,15 +9,24 @@ function Navbar() {
         <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
           Inicio
         </NavLink>
+
         <NavLink to="/acerca" className={({ isActive }) => (isActive ? "active" : "")}>
           Acerca de mí
         </NavLink>
+
         <NavLink to="/contacto" className={({ isActive }) => (isActive ? "active" : "")}>
           Contacto
         </NavLink>
+
         <NavLink to="/tablas" className={({ isActive }) => (isActive ? "active" : "")}>
           Tablas
         </NavLink>
+
+        {/* Nuevo enlace */}
+        <NavLink to="/usuarios" className={({ isActive }) => (isActive ? "active" : "")}>
+          Usuarios
+        </NavLink>
+
       </nav>
     </div>
   );
