@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Tablas from "./pages/Tablas";
 import Usuarios from "./pages/Usuarios";
+import Mapa from "./pages/Mapa"; 
 import "./styles/App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/tablas" element={<Tablas />} />
         <Route path="/usuarios" element={<Usuarios />} />
+        <Route path="/mapa" element={<Mapa />} /> 
       </Routes>
       <Footer />
     </>

@@ -22,11 +22,14 @@ function Navbar() {
           Tablas
         </NavLink>
 
-        {/* Nuevo enlace */}
         <NavLink to="/usuarios" className={({ isActive }) => (isActive ? "active" : "")}>
           Usuarios
         </NavLink>
 
+        {/* NUEVO */}
+        <NavLink to="/mapa" className={({ isActive }) => (isActive ? "active" : "")}>
+          Mapa
+        </NavLink>
       </nav>
     </div>
   );
