@@ -30,6 +30,13 @@ function Navbar() {
         <NavLink to="/mapa" className={({ isActive }) => (isActive ? "active" : "")}>
           Mapa
         </NavLink>
+        <NavLink to="/ruta-google-maps" className={({ isActive }) => (isActive ? "active" : "") }>
+          Ruta Google Maps
+        </NavLink>
+
+        <NavLink to="/drawing-map" className={({ isActive }) => (isActive ? "active" : "") }>
+          Dibujar
+        </NavLink>
       </nav>
     </div>
   );

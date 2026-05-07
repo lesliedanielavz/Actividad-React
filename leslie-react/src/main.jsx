@@ -23,21 +23,9 @@ function Root() {
       {/* Context Provider */}
       <AlumnoProvider>
 
-        {/* Menú de navegación */}
-        <nav style={{ padding: "15px", backgroundColor: "#f2f2f2" }}>
-          <Link to="/" style={{ marginRight: "15px" }}>
-            Inicio
-          </Link>
-
-          <Link to="/ruta-google-maps">
-            Ruta Google Maps
-          </Link>
-        </nav>
-
         {/* Rutas */}
         <Routes>
           <Route path="/*" element={<App />} />
-          <Route path="/ruta-google-maps" element={<RutaGoogleMaps />} />
         </Routes>
 
       </AlumnoProvider>

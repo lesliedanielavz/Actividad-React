@@ -82,7 +82,18 @@ export default function RutaGoogleMaps() {
       </p>
 
       {/* Botón para generar la ruta */}
-      <button onClick={calcularRuta} style={{ marginBottom: "15px" }}>
+      <button
+        onClick={calcularRuta}
+        style={{
+          marginBottom: "15px",
+          backgroundColor: "#1e90ff",
+          color: "white",
+          border: "none",
+          padding: "10px 18px",
+          borderRadius: "6px",
+          cursor: "pointer",
+        }}
+      >
         Calcular ruta
       </button>
       {error && (
